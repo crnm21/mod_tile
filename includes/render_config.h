@@ -50,7 +50,7 @@
 // Timeout before giving for a tile to be rendered
 // (This is the default value. Can be overwritten in Apache config with ModTileRequestTimeout.)
 #define REQUEST_TIMEOUT (3)
-#define FD_INVALID (-1)
+#define FD_INVALID (0)
 
 
 #define MIN(x,y) ((x)<(y)?(x):(y))
@@ -72,8 +72,8 @@
 
 // Metatiles are much larger in size so we don't need big queues to handle large areas
 #ifdef METATILE
-#define QUEUE_MAX (64)
-#define REQ_LIMIT (32)
+#define QUEUE_MAX (128)
+#define REQ_LIMIT (64)
 #define DIRTY_LIMIT (1000)
 
 #else
