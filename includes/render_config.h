@@ -32,7 +32,7 @@
 // The XML configuration used if one is not provided
 #define XMLCONFIG_DEFAULT "default"
 // Maximum number of configurations that mod tile will allow
-#define XMLCONFIGS_MAX 10
+#define XMLCONFIGS_MAX 100
 
 // Mapnik input plugins (will need to adjust for 32 bit libs)
 #define MAPNIK_PLUGINS "/usr/local/lib64/mapnik/input"
